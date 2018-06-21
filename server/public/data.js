@@ -1,4 +1,4 @@
-module.exports = {
+const animals = {
     birds: [
       {name:'Kiwi', silhouette:'https://cdn.pixabay.com/photo/2012/04/14/13/16/kiwi-33884_960_720.png', img:'https://nzhistory.govt.nz/files/styles/fullsize/public/laser-kiwi-flag.jpg?itok=bC9qnIz8', facts:'https://en.wikipedia.org/wiki/Kiwi'},
     ],
@@ -12,3 +12,5 @@ module.exports = {
       {name:'Piranha', silhouette:'https://www.spreadshirt.com/image-server/v1/mp/designs/13180742,width=178,height=178/piranha-silhouette.png', img:'https://www.sickchirpse.com/wp-content/uploads/2015/03/Piranha.jpg', facts:'https://en.wikipedia.org/wiki/Piranha'}
     ]
   }
+
+export default animals
