@@ -11,7 +11,7 @@ const App = () => {
     <React.Fragment>
 
     <h1>Welcome to our Zoo</h1>
-    <Route path='/' component={ZooHome}/>
+    <Route exact path='/' component={ZooHome}/>
     <Route path='/:category' component={Category}/>
     </React.Fragment>
     </Router>
