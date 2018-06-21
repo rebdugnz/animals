@@ -11,10 +11,10 @@ const Zoohome = (props) => {
             <div>
                 {categories.map(animal => {
                   return <div key={animal}>
-                    <h2>
-                      <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>{animal}</Link>
-                    </h2>
+                    <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>
+                    <h2>{animal} </h2>
                     <img src={data[animal][0].silhouette} />
+                  </Link>
                   </div>
                 })}
             </div>
