@@ -12,8 +12,8 @@ const App = () => {
 
     <h1>Welcome to our Zoo</h1>
     <Route exact path='/' component={ZooHome}/>
-    <Route path='/:category' component={Category}/>
-    <Route exact path='/:category/:name/info' component={Info}/>
+    <Route exact path='/:category' component={Category}/>
+    <Route path='/:category/:name/info' component={Info}/>
     </React.Fragment>
     </Router>
   )
