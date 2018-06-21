@@ -11,10 +11,12 @@ class Category extends React.Component {
     }
 
     render() {
-      console.log(this.props.match.params.category)
+      const category = this.props.match.params.category
+      console.log(category)
         return (
             <div className="Category">
                 <p> this is {this.state.desc} </p>
+                <p> we need to render the {category} </p>
             </div>
         )
     }
