@@ -7,8 +7,6 @@ const Info = (props) => {
   const name = props.match.params.name
   const category = data[props.match.params.category]
 
-  console.log(category);
-
         return (
             <div>
                 <h2> Welcome to the {name} page</h2>
