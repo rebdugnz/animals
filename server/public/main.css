@@ -8,6 +8,7 @@
   display: inline-block;
   height: 45vw;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .individualAnimal img {

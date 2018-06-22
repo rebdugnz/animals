@@ -8,9 +8,9 @@ const Zoohome = (props) => {
         return (
             <div className='zoohome'>
                 {categories.map(animal => {
-                  return <div className='individualAnimal' key={animal}>
+                  return <div className="individualAnimal" key={animal}>
                     <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>
-                    <h2>{animal} </h2>
+                    <h2>{animal}</h2>
                     <img src={data[animal][0].silhouette} />
                   </Link>
                   </div>
