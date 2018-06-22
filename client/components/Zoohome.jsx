@@ -4,16 +4,17 @@ import animals from '../../server/public/data.js'
 
 const Zoohome = (props) => {
   const categories = Object.keys(animals)
-  console.log(categories);
+  const data = animals
+  console.log(data);
   console.log(props);
         return (
             <div>
                 {categories.map(animal => {
                   return <div key={animal}>
-                    <h2>
-                      <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>{animal}</Link>
-                    </h2>
-                    
+                    <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>
+                    <h2>{animal} </h2>
+                    <img src={data[animal][0].silhouette} />
+                  </Link>
                   </div>
                 })}
             </div>

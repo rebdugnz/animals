@@ -1,6 +1,6 @@
 const animals = {
     birds: [
-      {name:'Kiwi', silhouette:'https://cdn.pixabay.com/photo/2012/04/14/13/16/kiwi-33884_960_720.png', img:'https://nzhistory.govt.nz/files/styles/fullsize/public/laser-kiwi-flag.jpg?itok=bC9qnIz8', facts:'https://en.wikipedia.org/wiki/Kiwi'},
+      {name:'Kiwi', silhouette:'https://cdn.pixabay.com/photo/2012/04/14/13/16/kiwi-33884_960_720.png', img:'http://www.purangikiwi.co.nz/wp-content/uploads/2016/02/kiwi_head.jpg', facts:'https://en.wikipedia.org/wiki/Kiwi'},
     ],
     reptiles: [
       {name:'Tuatara', silhouette:'http://www.supercoloring.com/sites/default/files/silhouettes/2015/07/tuatara-black-silhouette.svg', img:'https://www.pottonandburton.co.nz/wp-content/uploads/2015/09/tuatara.png', facts:'https://en.wikipedia.org/wiki/Tuatara'}
