@@ -79,9 +79,11 @@ class Answer extends React.Component {
         const {sound, sound_file} = animal
         console.log(sound, ':', sound_file)
         return (
-            <div className="Answer">
+
+            <div style={{textAlign: 'center'}} className="Answer">
                 {this.textSound(sound)}
                 {this.soundPlayerArea(sound_file)}
+            
                 <p> What animal is it?? </p>
                 <input type="text"/>
                 <button onClick={this.onButtonPress} >???</button>
