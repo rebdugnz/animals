@@ -22,13 +22,13 @@ class Animal extends React.Component {
                 <ul>
                   {animalArray.map(
                     (animal) => {
-                     return (<li><Link to={`/${category}/${animal.name}/answer`}><img src={animal.silhouette} /></Link>
+                     return (<li><Link to={`/snood/${category}/${animal.name}/answer`}><img src={animal.silhouette} /></Link>
                       </li>)
                     }
 
                   )}
                 </ul>
-              
+
             </div>
         )
     }

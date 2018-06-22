@@ -14,9 +14,9 @@ const App = () => {
 
     <h1 style={{textAlign: 'center', fontSize: 50, color: '#1ca02e'}}>Welcome to our Zoo</h1>
     <Route exact path='/' component={ZooHome}/>
-    <Route path='/:category' component={Category}/>
-    <Route path='/:category/:name/info' component={Info}/>
-    <Route path='/:category/:name/answer' component={Answer} />
+    <Route path='/snood/:category' component={Category}/>
+    <Route path='/snood/:category/:name/answer' component={Answer} />
+    <Route path='/info/:category/:name' component={Info}/>
     </React.Fragment>
     </Router>
   )

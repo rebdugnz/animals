@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class Answer extends React.Component {
     constructor(props) {
@@ -7,13 +8,13 @@ class Answer extends React.Component {
         this.state = {
             buttonClicked:false,
         }
-        
+
         this.onButtonPress = this.onButtonPress.bind(this);
 
     }
 
     onButtonPress() {
-      
+
       this.setState({
         buttonClicked: true
       })
@@ -26,11 +27,11 @@ class Answer extends React.Component {
         return (
           <React.Fragment>
           <p> It's a {name}!</p>
-          <a href={`./${category}/${name}/info`}>More about {name}</a>
+          <Link to={`/info/${category}/${name}`}>More about {name}</Link>
           </React.Fragment>
         )
       }
-      
+
     }
 
     render() {
@@ -46,4 +47,3 @@ class Answer extends React.Component {
 }
 
 export default Answer
-
