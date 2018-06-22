@@ -6,12 +6,12 @@ const Info = (props) => {
   const data = animals
   const name = props.match.params.name
   const category = data[props.match.params.category]
-
+  let animal = category.find(item => item.name === name)
         return (
             <div>
                 <h2> It's a {name}</h2>
-                <img src={category[0].img} />
-                <p>Find some info here!: <a target="_blank" href={category[0].facts}>{category[0].facts}</a></p>
+                <img src={animal.img} />
+                <p>Find some info here!: <a target="_blank" href={animal.facts}>{animal.facts}</a></p>
             </div>
         )
 }
