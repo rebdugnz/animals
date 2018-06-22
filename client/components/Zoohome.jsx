@@ -5,8 +5,6 @@ import animals from '../../server/public/data.js'
 const Zoohome = (props) => {
   const categories = Object.keys(animals)
   const data = animals
-  console.log(data);
-  console.log(props);
         return (
             <div className='zoohome'>
                 {categories.map(animal => {

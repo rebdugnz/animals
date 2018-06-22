@@ -3,7 +3,9 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 
 import ZooHome from './Zoohome'
 import Category from './Category'
-
+import Info from './Info'
+import Animal from './Animal'
+import Answer from './Answer'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
     <h1>Welcome to our Zoo</h1>
     <Route exact path='/' component={ZooHome}/>
     <Route path='/:category' component={Category}/>
+    <Route path='/:category/:name/info' component={Info}/>
+    <Route path='/:category/:name/answer' component={Answer} />
     </React.Fragment>
     </Router>
   )
