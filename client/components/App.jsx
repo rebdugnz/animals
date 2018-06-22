@@ -12,7 +12,7 @@ const App = () => {
     <Router>
     <React.Fragment>
 
-    <h1>Welcome to our Zoo</h1>
+    <h1 style={{textAlign: 'center', fontSize: 50, color: '#1ca02e'}}>Welcome to our Zoo</h1>
     <Route exact path='/' component={ZooHome}/>
     <Route path='/:category' component={Category}/>
     <Route path='/:category/:name/info' component={Info}/>
