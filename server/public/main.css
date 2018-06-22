@@ -15,3 +15,37 @@
   width: 30vw;
   height: 30vw;
 }
+
+.Category {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.animalSil {
+  list-style: none;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.animalSil img {
+  max-width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+
+}
+
+.reptile {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrDXEsNJaPpG0PPkJg8cPHYo9l7-nFOzzoaKuKwqEjKCBRbQkc')
+}
+.bird {
+  background-image: url('https://i.pinimg.com/originals/eb/b6/9d/ebb69de752950092edddf0870c1f1d4c.jpg');
+}
+.fish {
+  background-image: url('https://i.ytimg.com/vi/P9zHeCA7EdE/maxresdefault.jpg');
+}
+.mammal {
+    background-image: url('')
+}

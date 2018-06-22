@@ -18,14 +18,17 @@ class Animal extends React.Component {
       const animalArray=data[category]
       console.log(this.props)
         return (
-            <div className= "Animal">
+            <div className="animalWrap">
                 <ul>
                   {animalArray.map(
                     (animal) => {
-                     return (<li><Link to={`/snood/${category}/${animal.name}/answer`}><img src={animal.silhouette} /></Link>
+                     return (
+                       <li className="animalSil">
+                         <Link to={`/snood/${category}/${animal.name}/answer`}>
+                         <img src={animal.silhouette} />
+                       </Link>
                       </li>)
                     }
-
                   )}
                 </ul>
 

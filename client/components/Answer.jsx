@@ -36,7 +36,7 @@ class Answer extends React.Component {
 
     render() {
         return (
-            <div className="Answer">
+            <div style={{textAlign: 'center'}} className="Answer">
                 <p> What animal is it?? </p>
                 <input type="text"/>
                 <button onClick={this.onButtonPress} >???</button>
