@@ -4,6 +4,8 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 import ZooHome from './Zoohome'
 import Category from './Category'
 import Info from './Info'
+import Animal from './Animal'
+import Answer from './Answer'
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
     <Route exact path='/' component={ZooHome}/>
     <Route exact path='/:category' component={Category}/>
     <Route path='/:category/:name/info' component={Info}/>
+    <Route path='/:category/:name/answer' component={Answer} />
     </React.Fragment>
     </Router>
   )
