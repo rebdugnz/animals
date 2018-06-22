@@ -1,0 +1,16 @@
+.zoohome {
+  width: 90vw;
+  height: 90vw;
+}
+
+.individualAnimal {
+  width: 45vw;
+  display: inline-block;
+  height: 45vw;
+  text-align: center;
+}
+
+.individualAnimal img {
+  width: 30vw;
+  height: 30vw;
+}
