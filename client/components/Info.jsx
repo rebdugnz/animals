@@ -9,7 +9,7 @@ const Info = (props) => {
   let animal = category.find(item => item.name === name)
   console.log(animal);
         return (
-            <div>
+            <div className="Category">
                 <h2> It's a {name}</h2>
                 <img src={animal.img} />
                 <p>Find some info here!: <a target="_blank" href={animal.facts}>{animal.facts}</a></p>
