@@ -6,7 +6,10 @@ const Info = (props) => {
   const data = animals
   const name = props.match.params.name
   const category = data[props.match.params.category]
-  let animal = category.find(item => item.name === name)
+  let animal = category.find(item => {
+    console.log(item.name, item.name === name)
+    return item.name === name
+  })
   console.log(animal);
         return (
             <div className="Category">

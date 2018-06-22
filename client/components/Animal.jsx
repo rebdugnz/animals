@@ -16,7 +16,6 @@ class Animal extends React.Component {
     render() {
       const category=this.props.category
       const animalArray=data[category]
-      console.log(this.props)
         return (
             <div className="animalWrap">
                 <ul>

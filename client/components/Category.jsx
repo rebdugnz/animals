@@ -14,7 +14,6 @@ class Category extends React.Component {
     render() {
 
       const category = this.props.match.params.category
-      console.log(category);
       let backgroundClass = '';
 
       if (category == 'fish'){
