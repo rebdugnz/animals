@@ -6,9 +6,9 @@ const Zoohome = (props) => {
   const categories = Object.keys(animals)
   const data = animals
         return (
-            <div>
+            <div className='zoohome'>
                 {categories.map(animal => {
-                  return <div key={animal}>
+                  return <div className='individualAnimal' key={animal}>
                     <Link style={{textDecorationLine: 'none'}} to={`/${animal}`}>
                     <h2>{animal} </h2>
                     <img src={data[animal][0].silhouette} />

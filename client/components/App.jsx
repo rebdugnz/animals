@@ -14,7 +14,7 @@ const App = () => {
 
     <h1>Welcome to our Zoo</h1>
     <Route exact path='/' component={ZooHome}/>
-    <Route exact path='/:category' component={Category}/>
+    <Route path='/:category' component={Category}/>
     <Route path='/:category/:name/info' component={Info}/>
     <Route path='/:category/:name/answer' component={Answer} />
     </React.Fragment>
